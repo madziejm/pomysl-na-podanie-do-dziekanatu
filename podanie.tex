@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{letter}
+
+\usepackage{polski}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm, headsep=2cm]{geometry}
+
+\newcommand{\imieNazwisko}{Imię Nazwisko}
+\newcommand{\ulica}{ul. Przykładowa 42/2}
+\newcommand{\miasto}{51-234 Wrocław}
+\newcommand{\nrAlbumu}{299999}
+\newcommand{\email}{299999@uwr.edu.pl}
+
+\begin{document}
+    \pagestyle{empty}
+    \begin{flushright}
+        Wrocław, {\today} r.
+    \end{flushright}
+    \vspace{1cm}
+    \begin{flushleft}
+        \textbf{\imieNazwisko} \\
+        \ulica\\
+        \miasto\\
+        nr albumu: \nrAlbumu\\
+        \href{mailto:\email}{\nolinkurl{\email} }
+    \end{flushleft}
+    \vspace{1cm}
+    \begin{flushleft}
+        \hspace{80mm} \textbf{Dziekan} \\
+        \hspace{80mm} \textbf{Wydziału Matematyki i Informatyki} \\
+        \hspace{80mm} Uniwersytetu Wrocławskiego \\
+        \hspace{80mm} ul. Fryderyka Joliot-Curie 15 \\
+        \hspace{80mm} 50-383 Wrocław
+    \end{flushleft}
+    \vspace{1cm}
+    \begin{center}
+        \large {\huge Podanie}
+    \end{center}
+    \vspace{1cm}
+
+    Szanowny Panie Dziekanie,\\
+    proszę o zmianę toku moich studiów licencjackich na inżynierski.
+
+    \vspace{30mm}
+
+    \begin{flushright}
+        \imieNazwisko\hspace{0.5cm} \makebox[6cm]{\hrulefill}
+    \end{flushright}
+
+\end{document}
